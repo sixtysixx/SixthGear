@@ -9,6 +9,7 @@
   "status",
   "due_date",
   "area",
+  "progress_html",
   "section_break_dashboard",
   "project_hub",
   "section_break_details",
@@ -43,6 +44,11 @@
    "fieldtype": "Link",
    "label": "Area",
    "options": "Area"
+  },
+  {
+   "fieldname": "progress_html",
+   "fieldtype": "HTML",
+   "label": "Progress"
   },
   {
    "fieldname": "section_break_dashboard",

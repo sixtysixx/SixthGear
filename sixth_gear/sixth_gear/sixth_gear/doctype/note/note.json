@@ -12,7 +12,9 @@
   "section_break_content",
   "capture",
   "progressive_summarization",
-  "distill"
+  "distill",
+  "section_break_related",
+  "related_notes"
  ],
  "fields": [
   {
@@ -60,6 +62,17 @@
    "fieldname": "distill",
    "fieldtype": "Text Editor",
    "label": "Distill (Summary)"
+  },
+  {
+   "fieldname": "section_break_related",
+   "fieldtype": "Section Break",
+   "label": "Connections"
+  },
+  {
+   "fieldname": "related_notes",
+   "fieldtype": "Table MultiSelect",
+   "label": "Related Notes",
+   "options": "Note"
   }
  ],
  "index_web_pages_for_search": 1,

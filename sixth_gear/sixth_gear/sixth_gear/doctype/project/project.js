@@ -1,6 +1,7 @@
 frappe.ui.form.on('Project', {
 	refresh: function(frm) {
 		if (!frm.is_new()) {
+			// Render Dashboard
 			frm.call({
 				method: 'get_dashboard_data',
 				doc: frm.doc,
@@ -8,6 +9,31 @@ frappe.ui.form.on('Project', {
 					if (r.message) {
 						render_dashboard(frm, r.message);
 					}
+				}
+			});
+
+			// Render Progress Bar (Simulated calculation from client side for immediate feedback,
+			// though the backend property exists for reliable data)
+			frappe.db.count('Task', {
+				reference_doctype: 'Project',
+				reference_name: frm.doc.name
+			}).then(total => {
+				if (total > 0) {
+					frappe.db.count('Task', {
+						reference_doctype: 'Project',
+						reference_name: frm.doc.name,
+						status: 'Completed'
+					}).then(completed => {
+						let percent = Math.round((completed / total) * 100);
+						let html = `
+							<div class="progress" style="height: 20px;">
+								<div class="progress-bar bg-success" role="progressbar" style="width: ${percent}%;" aria-valuenow="${percent}" aria-valuemin="0" aria-valuemax="100">${percent}%</div>
+							</div>
+						`;
+						frm.set_df_property('progress_html', 'options', html);
+					});
+				} else {
+					frm.set_df_property('progress_html', 'options', '<p class="text-muted">No tasks linked.</p>');
 				}
 			});
 		}

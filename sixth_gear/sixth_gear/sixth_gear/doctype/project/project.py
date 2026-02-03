@@ -30,3 +30,21 @@ class Project(Document):
 			"notes": notes,
 			"resources": resources
 		}
+
+	@property
+	def progress(self):
+		total_tasks = frappe.db.count("Task", {
+			"reference_doctype": "Project",
+			"reference_name": self.name
+		})
+
+		if total_tasks == 0:
+			return 0
+
+		completed_tasks = frappe.db.count("Task", {
+			"reference_doctype": "Project",
+			"reference_name": self.name,
+			"status": "Completed"
+		})
+
+		return (completed_tasks / total_tasks) * 100

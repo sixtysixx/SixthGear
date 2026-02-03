@@ -8,6 +8,7 @@
   "subject",
   "status",
   "priority",
+  "color",
   "due_date",
   "section_break_related",
   "reference_doctype",
@@ -38,6 +39,12 @@
    "in_standard_filter": 1,
    "label": "Priority",
    "options": "Low\nMedium\nHigh"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color",
+   "read_only": 1
   },
   {
    "fieldname": "due_date",

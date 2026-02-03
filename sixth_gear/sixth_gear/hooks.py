@@ -143,3 +143,19 @@ app_license = "MIT"
 # }
 
 # git_url = "https://github.com/jules/sixth_gear"
+
+# Security Settings (Rate Limiting)
+# ---------------------------------
+# Limit the number of requests per window.
+# window is in seconds, limit is number of requests.
+
+rate_limit = {
+	"limit": 600,
+	"window": 3600
+}
+
+# CAPTCHA
+# -------
+# Google reCAPTCHA settings should be set in site_config.json,
+# but we can ensure the hook for validation is present if needed.
+# For standard Login, Frappe handles this via System Settings.
