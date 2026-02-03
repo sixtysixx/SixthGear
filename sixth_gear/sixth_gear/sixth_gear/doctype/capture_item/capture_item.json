@@ -1,35 +1,37 @@
 {
  "actions": [],
- "autoname": "field:area_name",
+ "autoname": "format:Capture-{MM}-{DD}-{####}",
  "creation": "2024-05-22 10:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "area_name",
-  "description"
+  "content",
+  "status"
  ],
  "fields": [
   {
-   "fieldname": "area_name",
-   "fieldtype": "Data",
+   "fieldname": "content",
+   "fieldtype": "Text",
    "in_list_view": 1,
-   "label": "Area Name",
-   "reqd": 1,
-   "unique": 1
+   "label": "Content",
+   "reqd": 1
   },
   {
-   "fieldname": "description",
-   "fieldtype": "Text Small",
-   "label": "Description"
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nConverted\nDiscarded"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
  "modified": "2024-05-22 10:00:00.000000",
  "modified_by": "Administrator",
- "module": "SixDrops",
- "name": "Area",
- "naming_rule": "By fieldname",
+ "module": "Sixth Gear",
+ "name": "Capture Item",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

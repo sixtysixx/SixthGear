@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 with open("requirements.txt") as f:
 	install_requires = f.read().strip().split("\n")
 
-from sixdrops import __version__ as version
+from sixth_gear import __version__ as version
 
 setup(
-	name="sixdrops",
+	name="sixth_gear",
 	version=version,
-	description="SixDrops: A hybrid LifeOS and Second Brain Frappe App",
+	description="Sixth Gear: A hybrid LifeOS and Second Brain Frappe App",
 	author="Jules",
 	author_email="jules@example.com",
 	packages=find_packages(),

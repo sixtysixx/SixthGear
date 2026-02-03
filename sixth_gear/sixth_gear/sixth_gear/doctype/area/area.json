@@ -1,35 +1,21 @@
 {
  "actions": [],
- "autoname": "field:resource_name",
+ "autoname": "field:area_name",
  "creation": "2024-05-22 10:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "resource_name",
-  "area",
-  "project",
+  "area_name",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "resource_name",
+   "fieldname": "area_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Resource Name",
+   "label": "Area Name",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "area",
-   "fieldtype": "Link",
-   "label": "Area",
-   "options": "Area"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
   },
   {
    "fieldname": "description",
@@ -41,8 +27,8 @@
  "links": [],
  "modified": "2024-05-22 10:00:00.000000",
  "modified_by": "Administrator",
- "module": "SixDrops",
- "name": "Resource",
+ "module": "Sixth Gear",
+ "name": "Area",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
