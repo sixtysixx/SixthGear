@@ -32,7 +32,7 @@ services:
       - --skip-innodb-read-only-compressed # Temporary fix for MariaDB 10.6
     environment:
       - MYSQL_ROOT_PASSWORD=admin
-      - MYSQL_DATABASE=mindos
+      - MYSQL_DATABASE=sixdrops
     volumes:
       - db-data:/var/lib/mysql
 

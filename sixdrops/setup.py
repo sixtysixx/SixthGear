@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 with open("requirements.txt") as f:
 	install_requires = f.read().strip().split("\n")
 
-from mindos import __version__ as version
+from sixdrops import __version__ as version
 
 setup(
-	name="mindos",
+	name="sixdrops",
 	version=version,
-	description="MindOS: A hybrid LifeOS and Second Brain Frappe App",
+	description="SixDrops: A hybrid LifeOS and Second Brain Frappe App",
 	author="Jules",
 	author_email="jules@example.com",
 	packages=find_packages(),

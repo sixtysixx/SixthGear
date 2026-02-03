@@ -1,0 +1,23 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"SixDrops Home Base\",\"col\":12}},{\"type\":\"number_card\",\"data\":{\"card_name\":\"Tasks Due Today\",\"col\":4}},{\"type\":\"number_card\",\"data\":{\"card_name\":\"Active Projects\",\"col\":4}},{\"type\":\"number_card\",\"data\":{\"card_name\":\"Notes in Inbox\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"Quick Actions\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quick Capture\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Task\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Note\",\"col\":4}}]",
+ "creation": "2024-05-22 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Home Base",
+ "modified": "2024-05-22 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "SixDrops",
+ "name": "Home Base",
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1,
+ "title": "Home Base"
+}

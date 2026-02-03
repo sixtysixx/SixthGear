@@ -1,23 +1,42 @@
 {
  "actions": [],
- "autoname": "field:resource_name",
+ "autoname": "field:project_name",
  "creation": "2024-05-22 10:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "resource_name",
+  "project_name",
+  "status",
+  "due_date",
   "area",
-  "project",
+  "section_break_dashboard",
+  "project_hub",
+  "section_break_details",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "resource_name",
+   "fieldname": "project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Resource Name",
+   "label": "Project Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nOn Hold\nCompleted\nDropped",
+   "default": "Active"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date"
   },
   {
    "fieldname": "area",
@@ -26,10 +45,19 @@
    "options": "Area"
   },
   {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
+   "fieldname": "section_break_dashboard",
+   "fieldtype": "Section Break",
+   "label": "Project Hub"
+  },
+  {
+   "fieldname": "project_hub",
+   "fieldtype": "HTML",
+   "label": "Project Hub"
+  },
+  {
+   "fieldname": "section_break_details",
+   "fieldtype": "Section Break",
+   "label": "Details"
   },
   {
    "fieldname": "description",
@@ -41,8 +69,8 @@
  "links": [],
  "modified": "2024-05-22 10:00:00.000000",
  "modified_by": "Administrator",
- "module": "MindOS",
- "name": "Resource",
+ "module": "SixDrops",
+ "name": "Project",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

@@ -1,7 +1,7 @@
-app_name = "mindos"
-app_title = "MindOS"
+app_name = "sixdrops"
+app_title = "SixDrops"
 app_publisher = "Jules"
-app_description = "MindOS: A hybrid LifeOS and Second Brain Frappe App"
+app_description = "SixDrops: A hybrid LifeOS and Second Brain Frappe App"
 app_email = "jules@example.com"
 app_license = "MIT"
 
@@ -9,12 +9,12 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/mindos/css/mindos.css"
-# app_include_js = "/assets/mindos/js/mindos.js"
+# app_include_css = "/assets/sixdrops/css/sixdrops.css"
+# app_include_js = "/assets/sixdrops/js/sixdrops.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/mindos/css/mindos.css"
-# web_include_js = "/assets/mindos/js/mindos.js"
+# web_include_css = "/assets/sixdrops/css/sixdrops.css"
+# web_include_js = "/assets/sixdrops/js/sixdrops.js"
 
 # Home Pages
 # ----------
@@ -37,14 +37,14 @@ app_license = "MIT"
 # Installation
 # ------------
 
-# before_install = "mindos.install.before_install"
-# after_install = "mindos.install.after_install"
+# before_install = "sixdrops.install.before_install"
+# after_install = "sixdrops.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "mindos.uninstall.before_uninstall"
-# after_uninstall = "mindos.uninstall.after_uninstall"
+# before_uninstall = "sixdrops.uninstall.before_uninstall"
+# after_uninstall = "sixdrops.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
@@ -52,8 +52,8 @@ app_license = "MIT"
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "mindos.utils.before_app_install"
-# after_app_install = "mindos.utils.after_app_install"
+# before_app_install = "sixdrops.utils.before_app_install"
+# after_app_install = "sixdrops.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
@@ -61,14 +61,14 @@ app_license = "MIT"
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "mindos.utils.before_app_uninstall"
-# after_app_uninstall = "mindos.utils.after_app_uninstall"
+# before_app_uninstall = "sixdrops.utils.before_app_uninstall"
+# after_app_uninstall = "sixdrops.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "mindos.notifications.get_notification_config"
+# notification_config = "sixdrops.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -107,39 +107,39 @@ app_license = "MIT"
 
 # scheduler_events = {
 # 	"all": [
-# 		"mindos.tasks.all"
+# 		"sixdrops.tasks.all"
 # 	],
 # 	"daily": [
-# 		"mindos.tasks.daily"
+# 		"sixdrops.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"mindos.tasks.hourly"
+# 		"sixdrops.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"mindos.tasks.weekly"
+# 		"sixdrops.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"mindos.tasks.monthly"
+# 		"sixdrops.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "mindos.install.before_tests"
+# before_tests = "sixdrops.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "mindos.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "sixdrops.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "mindos.task.get_dashboard_data"
+# 	"Task": "sixdrops.task.get_dashboard_data"
 # }
 
-# git_url = "https://github.com/jules/mindos"
+# git_url = "https://github.com/jules/sixdrops"

@@ -1,37 +1,35 @@
 {
  "actions": [],
- "autoname": "format:Capture-{MM}-{DD}-{####}",
+ "autoname": "field:area_name",
  "creation": "2024-05-22 10:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "content",
-  "status"
+  "area_name",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "content",
-   "fieldtype": "Text",
+   "fieldname": "area_name",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Content",
-   "reqd": 1
+   "label": "Area Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "default": "Open",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Open\nConverted\nDiscarded"
+   "fieldname": "description",
+   "fieldtype": "Text Small",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
  "modified": "2024-05-22 10:00:00.000000",
  "modified_by": "Administrator",
- "module": "MindOS",
- "name": "Capture Item",
- "naming_rule": "Expression",
+ "module": "SixDrops",
+ "name": "Area",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
