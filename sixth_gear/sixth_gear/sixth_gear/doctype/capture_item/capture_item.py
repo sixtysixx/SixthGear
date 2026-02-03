@@ -1,6 +1,7 @@
 import frappe
 from frappe.model.document import Document
 
+
 class CaptureItem(Document):
     @frappe.whitelist()
     def convert_to_task(self):
@@ -16,7 +17,7 @@ class CaptureItem(Document):
     @frappe.whitelist()
     def convert_to_note(self):
         note = frappe.new_doc("Note")
-        note.title = self.content[:50] # First 50 chars as title
+        note.title = self.content[:50]  # First 50 chars as title
         note.capture = self.content
         note.insert()
 

@@ -24,8 +24,8 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Guest": "blog",
-#	"System Manager": "/app/home-base"
+# "Guest": "blog",
+# "System Manager": "/app/home-base"
 # }
 
 # Generators
@@ -149,10 +149,7 @@ app_license = "MIT"
 # Limit the number of requests per window.
 # window is in seconds, limit is number of requests.
 
-rate_limit = {
-	"limit": 600,
-	"window": 3600
-}
+rate_limit = {"limit": 600, "window": 3600}
 
 # CAPTCHA
 # -------
