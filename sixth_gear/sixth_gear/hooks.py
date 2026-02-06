@@ -10,7 +10,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/sixth_gear/css/sixth_gear.css"
-# app_include_js = "/assets/sixth_gear/js/sixth_gear.js"
+app_include_js = "/assets/sixth_gear/js/focus_mode.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/sixth_gear/css/sixth_gear.css"
@@ -105,23 +105,12 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"sixth_gear.tasks.all"
-# 	],
-# 	"daily": [
-# 		"sixth_gear.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"sixth_gear.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"sixth_gear.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"sixth_gear.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"sixth_gear.sixth_gear.scheduled_tasks.generate_recurring_tasks",
+		"sixth_gear.integrations.fetch_readwise"
+	],
+}
 
 # Testing
 # -------
@@ -156,3 +145,15 @@ rate_limit = {"limit": 600, "window": 3600}
 # Google reCAPTCHA settings should be set in site_config.json,
 # but we can ensure the hook for validation is present if needed.
 # For standard Login, Frappe handles this via System Settings.
+
+# PWA
+# ---
+pwa_manifest = {
+	"name": "Sixth Gear",
+	"short_name": "SixthGear",
+	"description": "Hybrid Productivity System",
+	"start_url": "/app/home-base",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#171717"
+}

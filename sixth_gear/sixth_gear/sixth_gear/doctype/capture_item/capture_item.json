@@ -5,10 +5,21 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "title",
   "content",
-  "status"
+  "status",
+  "section_break_media",
+  "audio_file",
+  "transcription",
+  "source"
  ],
  "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
   {
    "fieldname": "content",
    "fieldtype": "Text",
@@ -23,6 +34,28 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "Open\nConverted\nDiscarded"
+  },
+  {
+   "fieldname": "section_break_media",
+   "fieldtype": "Section Break",
+   "label": "Media"
+  },
+  {
+   "fieldname": "audio_file",
+   "fieldtype": "Attach",
+   "label": "Audio File"
+  },
+  {
+   "fieldname": "transcription",
+   "fieldtype": "Text",
+   "label": "Transcription"
+  },
+  {
+   "default": "Manual",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Manual\nEmail\nBrowser\nVoice\nReadwise"
   }
  ],
  "index_web_pages_for_search": 1,
