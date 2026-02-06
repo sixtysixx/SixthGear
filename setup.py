@@ -1,0 +1,19 @@
+from setuptools import setup, find_packages
+
+with open("requirements.txt") as f:
+    install_requires = f.read().strip().split("\n")
+
+# from syx import __version__ as version
+version = "0.0.1"
+
+setup(
+    name="syx",
+    version=version,
+    description="Syx: A hybrid LifeOS and Second Brain Frappe App",
+    author="Jules",
+    author_email="jules@example.com",
+    packages=find_packages(),
+    zip_safe=False,
+    include_package_data=True,
+    install_requires=install_requires,
+)

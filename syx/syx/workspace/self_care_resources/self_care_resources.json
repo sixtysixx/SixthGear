@@ -1,0 +1,23 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Self Care Resources\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Fitness\",\"color\":\"#FFD700\",\"link_to\":\"https://fitonapp.com\",\"content\":\"FitOn - Free Fitness Workouts\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Recipes\",\"color\":\"#FF6347\",\"link_to\":\"https://noods.io\",\"content\":\"Noods.io - Recipe Discovery\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Meditation\",\"color\":\"#87CEEB\",\"link_to\":\"https://www.headspace.com\",\"content\":\"Headspace - Guided Meditation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Sleep\",\"color\":\"#483D8B\",\"link_to\":\"https://www.calm.com\",\"content\":\"Calm - Sleep & Relaxation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Journaling\",\"color\":\"#98FB98\",\"link_to\":\"/app/note\",\"content\":\"Daily Journal (New Note)\",\"col\":4}}]",
+ "creation": "2024-05-22 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "idx": 0,
+ "is_standard": 1,
+ "label": "Self Care Resources",
+ "modified": "2024-05-22 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Syx",
+ "name": "Self Care Resources",
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 2,
+ "title": "Self Care Resources"
+}
