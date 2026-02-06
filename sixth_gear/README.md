@@ -56,10 +56,11 @@ Sixth Gear operates on the principle that organizing by **actionability** is sup
     cd sixth_gear
     ```
 
-3. Run with Docker Compose:
+3. Run with Podman Compose:
 
     ```bash
-    docker-compose up -d --build
+    podman compose up -d --build
+    # docker-compose up -d --build
     ```
 
 4. Access the site at `http://localhost:8000` (default Frappe port).

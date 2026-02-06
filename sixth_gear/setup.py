@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 with open("requirements.txt") as f:
     install_requires = f.read().strip().split("\n")
 
-from sixth_gear import __version__ as version
+# from sixth_gear import __version__ as version
+version = "0.0.1"
 
 setup(
     name="sixth_gear",

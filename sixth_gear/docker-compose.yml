@@ -1,12 +1,31 @@
 services:
   backend:
     build: .
+    user: root
+    command: >
+      bash -c "
+      chown -R frappe:frappe /home/frappe/frappe-bench &&
+      su frappe -c '
+        bench set-config -g db_host db &&
+        bench set-config -g redis_cache redis://redis:6379 &&
+        bench set-config -g redis_queue redis://redis:6379 &&
+        bench set-config -g redis_socketio redis://redis:6379 &&
+        bench start
+      '
+      "
+    ports:
+      - "8000:8000"
     deploy:
       restart_policy:
         condition: on-failure
     volumes:
       - sites:/home/frappe/frappe-bench/sites
       - logs:/home/frappe/frappe-bench/logs
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
     environment:
       - DB_HOST=db
       - DB_PORT=3306
