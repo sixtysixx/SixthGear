@@ -46,6 +46,12 @@
    "options": "Area"
   },
   {
+   "fieldname": "goal",
+   "fieldtype": "Link",
+   "label": "Goal",
+   "options": "Goal"
+  },
+  {
    "fieldname": "progress_html",
    "fieldtype": "HTML",
    "label": "Progress"

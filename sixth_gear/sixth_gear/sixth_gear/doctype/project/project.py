@@ -48,3 +48,9 @@ class Project(Document):
         )
 
         return (completed_tasks / total_tasks) * 100
+
+    def on_update(self):
+        if self.goal:
+            g = frappe.get_doc("Goal", self.goal)
+            g.calculate_progress()
+            g.save()

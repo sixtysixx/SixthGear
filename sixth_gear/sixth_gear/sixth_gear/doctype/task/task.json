@@ -54,6 +54,30 @@
    "label": "Due Date"
   },
   {
+   "fieldname": "section_break_recurring",
+   "fieldtype": "Section Break",
+   "label": "Recurrence"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_recurring",
+   "fieldtype": "Check",
+   "label": "Is Recurring"
+  },
+  {
+   "depends_on": "eval:doc.is_recurring",
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "next_due_date",
+   "fieldtype": "Date",
+   "label": "Next Due Date",
+   "read_only": 1
+  },
+  {
    "fieldname": "section_break_related",
    "fieldtype": "Section Break"
   },
